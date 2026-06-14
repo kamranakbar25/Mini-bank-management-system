@@ -70,9 +70,6 @@ menu = st.sidebar.radio(
     ]
 )
 
-
-# ---------------- CREATE ACCOUNT ----------------
-
 if menu == "Create Account":
     st.subheader("Create New Account")
 
@@ -114,8 +111,6 @@ if menu == "Create Account":
                 st.warning("Please note down your account number.")
 
 
-# ---------------- DEPOSIT MONEY ----------------
-
 elif menu == "Deposit Money":
     st.subheader("Deposit Money")
 
@@ -141,8 +136,6 @@ elif menu == "Deposit Money":
                 st.success(f"₹{amount} deposited successfully!")
                 st.info(f"Current Balance: ₹{user['balance']}")
 
-
-# ---------------- WITHDRAW MONEY ----------------
 
 elif menu == "Withdraw Money":
     st.subheader("Withdraw Money")
@@ -172,9 +165,6 @@ elif menu == "Withdraw Money":
                 st.success(f"₹{amount} withdrawn successfully!")
                 st.info(f"Current Balance: ₹{user['balance']}")
 
-
-# ---------------- ACCOUNT DETAILS ----------------
-
 elif menu == "Account Details":
     st.subheader("Account Details")
 
@@ -199,9 +189,6 @@ elif menu == "Account Details":
                 st.write(f"**Email:** {user['email']}")
                 st.write(f"**Account Number:** `{user['accountNo']}`")
                 st.write(f"**Balance:** ₹{user['balance']}")
-
-
-# ---------------- UPDATE DETAILS ----------------
 
 elif menu == "Update Details":
     st.subheader("Update Details")
@@ -240,9 +227,6 @@ elif menu == "Update Details":
 
                 Bank.save_data(data)
                 st.success("DETAILS UPDATED SUCCESSFULLY!")
-
-
-# ---------------- DELETE ACCOUNT ----------------
 
 elif menu == "Delete Account":
     st.subheader("Delete Account")
