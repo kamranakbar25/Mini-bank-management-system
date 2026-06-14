@@ -1,0 +1,6 @@
+data.json
+demo.py
+__pycache__/
+*.pyc
+.venv/
+venv/
